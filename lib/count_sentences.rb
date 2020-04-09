@@ -28,6 +28,6 @@ class String
 
   def count_sentences
   sentences = self.gsub(/[.?!]/, '\0|')
-  senteces.count
+  sentences.count
   end
 end
