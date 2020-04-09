@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-  splitting = self.split(/(\.|\?|\!)/)
-  splitting.count
+  sentences = self.gsub(/[.?!]/, '\0|')
+  senteces.count
   end
 end
