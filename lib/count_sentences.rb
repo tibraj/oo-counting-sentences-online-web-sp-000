@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-  sentences = self.gsub(/[.?!]/, '\0|')
+  sentences = self.scan(/[^\.!?]+[\.!?]/).map(&:strip)
   sentences.count
   end
 end
